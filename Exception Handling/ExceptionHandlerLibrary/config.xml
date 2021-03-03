@@ -1,0 +1,29 @@
+<Project name="ProjectRoot">
+- 	<Module name="Module 1">
+- 		<IOException>
+- 			
+  				<Action name="email" to="amrutaapatil99@gmail.com" from="adiraamruta99@gmail.com" subject="Something Went Wrong" password="$amruta@99" /> 
+  				<Action name="log" logFilePath="D:\\Eclipse Workspace\\ExceptionHandlerLibrary\\myFile.txt" /> 
+  				<Action name="abort" /> 
+  				<Action name="shutdown" /> 
+  			
+  		</IOException>
+- 		<SQLException>
+			
+  				<Action name="log" logFilePath="D:\\Eclipse Workspace\\ExceptionHandlerLibrary\\myFile.txt" /> 
+  				<Action name="abort" /> 
+  		
+  		</SQLException>
+- 		<FileNotFoundException>
+			
+  				<Action name="abort" /> 
+  			
+  		</FileNotFoundException>
+  	</Module>
+ </Project>
+ 
+ 
+ 
+ 
+ 
+ 
