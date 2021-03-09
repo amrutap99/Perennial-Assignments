@@ -1,0 +1,2 @@
+A,cat,is,sometimes,called,a,
+a,dog,is,sometimes,called,a
