@@ -2,7 +2,7 @@
 - 	<Module name="Module 1">
 - 		<IOException>
 - 			
-  				<Action name="email" to="amrutaapatil99@gmail.com" from="adiraamruta99@gmail.com" subject="Something Went Wrong" password="$amruta@99" /> 
+  				<Action name="email" to="amrutaapatil99@gmail.com" from="adiraamruta99@gmail.com" subject="Something Went Wrong" password="" /> 
   				<Action name="log" logFilePath="D:\\Eclipse Workspace\\ExceptionHandlerLibrary\\myFile.txt" /> 
   				<Action name="abort" /> 
   				<Action name="shutdown" /> 
