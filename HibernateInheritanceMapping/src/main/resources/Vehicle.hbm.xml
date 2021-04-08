@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC  
+ "-//Hibernate/Hibernate Mapping DTD 3.0//EN"  
+ "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="edu.ritindia.Vehicle" table="VEHICLE"
+		discriminator-value="vehicle">
+
+		<id name="modelNo">
+			<generator class="assigned"></generator>
+		</id>
+
+		<discriminator column="type" type="string"></discriminator>
+		<property name="vehicleBrand"></property>
+
+
+		<subclass name="edu.ritindia.Scooter"
+			discriminator-value="sc">
+			<property name="regNo"></property>
+			<property name="modelName"></property>
+		</subclass>
+		
+		<subclass name="edu.ritindia.Car"
+			discriminator-value="car">
+			<property name="modelType"></property>
+			<property name="engineType"></property>
+		</subclass>
+
+	</class>
+
+</hibernate-mapping>
